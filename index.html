@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蜡笔小新主题网页</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./11.css">
+
+
+</head>
+
+<body>
+    <div class="whole">
+        <div class="container">
+
+            <!--页头-->
+            <div class="mainbox">
+                <header class="headlist">
+                    <ul>
+                        <p>
+                        <div class="mainbox">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <div class="center-text">欢迎光临蜡笔小新主题页面</div>
+                        </div>
+                        </p>
+                    </ul>
+                </header>
+            </div>
+            <div class="slideshow">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/A4.jpg" alt="Image 1"></div>
+                        <div class="swiper-slide"><img src="images/A2.jpg" alt="Image 2"></div>
+                        <div class="swiper-slide"><img src="images/A3.jpg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="images/A1.jpg" alt="Image 4"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <!-- 音乐播放器 -->
+            <audio id="musicPlayer" controls>
+                <source src="蜡笔小新-蜡笔小新主题曲.mp3">
+            </audio>
+            <div class="container1">
+                <ul class="lrc-list">
+                </ul>
+                <div class="blackborad-text">
+                    <h4>点击下方按钮试试看！</h4>
+                </div>
+                <button style="font-size: 15px" onclick="playMusic()">开始播放</button>
+                <button style="font-size: 15px" onclick="pauseMusic()">暂停播放</button>
+            </div>
+            <div class="recommed">
+                <h2>动画片介绍</h2>
+                <div class="content">
+                    <img src="images/R.jpg" alt="Image">
+                    <span>
+                        <h3>剧情介绍</h3>
+                        <p>《蜡笔小新》是由日本漫画家臼井仪人创作的漫画。1990年8月，在《weekly漫画action》上开始连载。1992年，根据漫画改编的同名动画在朝日电视台播出。2010年7月16日，臼井仪人遗作《蜡笔小新》第50卷出版。在作者臼井仪人去世后，作品由“臼井仪人&UY工作室”沿袭原作风格继续创作。
+                        </p>
+                </div>
+                <hr />
+                <div class="content">
+                    <img src="images/R (1).jpg" alt="Image">
+                    <span>
+                        <h3>创作背景</h3>
+                        <p>臼井仪人先生说，之所以会创造出小新这个形象，是因为他在观察自己的孩子的时候，发现小孩子的想法往往非常独特，以至于作者被小孩的世界所吸引。所有的小孩都有乖巧和调皮的两面性。这种两面性对作者来讲是十分有趣的。反过来作者正是在自己的作品中反映了这一两面性。
+                        </p>
+                    </span>
+                </div>
+                <hr />
+                <div class="content">
+                    <img src="images/R (3).jpg" alt="Image">
+                    <span>
+                        <h3>动画评价</h3>
+                        <p>春日部市从前只是日本关东地区的一个交通要冲。自1992年《蜡笔小新》播出电视动画后，大大提高了该市的知名度，其知名度可以由该市以小新作为宣传人物得知。2015年5月14日，埼玉县将知名度高的野原新之助任命为“埼玉县旅游大使”，当地亦在英文版的《埼玉县旅游小册子》中加入蜡笔小新元素以吸引游客。
+                        </p>
+                    </span>
+                </div>
+                <hr />
+            </div>
+        </div>
+    </div>
+
+    <!-- 主角介绍 -->
+    <div class="container">
+        <header class="header">
+            <div class="s-recommend">
+                <h2>人物介绍</h2>
+                <div class="c-recommend">
+                    <div class="character">
+                        <img src="images1/1.png" alt="">
+                        <div>
+                            <h3>蜡笔小新</h3>
+                            <span>
+                                5岁，美冴、广志之子，小葵之兄。<br>
+                                住在春日部郊区某住宅区一栋二层小平房。B型血。
+                                喜欢漂亮的姐姐和辣妹。性格是我行我素。擅长的技能是“屁股外星人”“大象”。
+                            </span>
+                        </div>
+                    </div>
+                    <div class="character">
+                        <img src="images1/2.png" alt="">
+                        <div>
+                            <h3>野原美冴</h3>
+                            <span>
+                                29岁。熊本出身。<br>
+                                家庭主妇（职业）广志之妻，小新、小葵之母。<br>
+                                好面子，不认输，善良。脾气暴躁（对帅哥很温柔），做得一团糟、犯错有时死不承认，弱点是受不了别人的甜言蜜语。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c-recommend">
+                    <div class="character">
+                        <img src="images1/3.png" alt="">
+                        <div>
+                            <h3>野原广志</h3>
+                            <span>
+                                35岁。秋田出身。<br>
+                                脚有异常的气味。每天在公司里忙于工作，是家里的顶梁柱。
+                            </span>
+                        </div>
+                    </div>
+                    <div class="character">
+                        <img src="images1/4.png" alt="">
+                        <div>
+                            <h3>野原向日葵</h3>
+                            <span>
+                                主人公野原新之助的妹妹。<br>
+                                刘海有三个圈儿。哥哥喜欢向美女搭讪，而她和妈妈一样，喜欢帅哥和亮晶晶的东西。未满一岁。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c-recommend">
+                    <div class="character">
+                        <img src="images1/5.png" alt="">
+                        <div>
+                            <h3>野原小白</h3>
+                            <span>
+                                被抛弃的弃狗，后来被小新捡回家。<br>
+                                从路边的小箱子捡来的一只狗。
+                            </span>
+                        </div>
+                    </div>
+                    <div class="character">
+                        <img src="images1/6.png" alt="">
+                        <div>
+                            <h3>风间彻</h3>
+                            <span>
+                                向日葵班学生。<br>
+                                平时有点装腔作势，自尊心很高，但有时也有出乎意料的温柔的一面的优等生。幼儿园外，风间彻会参加各种各样的补习班，在补习的过程中经常会被新之助搅乱，导致自尊心受挫，但很快就会与新之助和好。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c-recommend">
+                    <div class="character">
+                        <img src="images1/7.png" alt="">
+                        <div>
+                            <h3>樱田妮妮</h3>
+                            <span>
+                                向日葵班学生。<br>
+                                喜欢当别人的传闻的女儿。喜欢玩超现实的过家家，但被邀请的朋友稍稍有些为难。跟妈妈一样，不如意的话会在厕所或没有人的角落里拿兔子拳打脚踢来出气……很可怕。
+                            </span>
+                        </div>
+                    </div>
+                    <div class="character">
+                        <img src="images1/8.png" alt="">
+                        <div>
+                            <h3>阿呆</h3>
+                            <span>
+                                向日葵班学生。<br>
+                                总是发呆，拖着鼻涕，说话的时候很敏锐。特长是用鼻涕制作螺旋桨和东京铁塔的事。最高兴的时候，鼻涕会快速旋转。爱好是收集石头。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c-recommend">
+                    <div class="character">
+                        <img src="images1/9.png" alt="">
+                        <div>
+                            <h3>酢乙女爱</h3>
+                            <span>
+                                千金大小姐。转学生，来到双叶幼稚园感受平民生活。<br>
+                                曾用一些爱的眼神来获取男生的心，后来把所有的爱都投到小新身上。
+                            </span>
+                        </div>
+                    </div>
+                    <div class="character">
+                        <img src="images1/10.png" alt="">
+                        <div>
+                            <h3>佐藤正男/佐藤正南/佐藤正雄</h3>
+                            <span>
+                                向日葵班学生。<br>
+                                感觉很弱，很容易被欺负的孩子。脸的形状很像“饭团”。有时非常认真，比如整理东西。很喜欢小爱。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="whole">
+                <!-- 留言互动区 -->
+                <div class="content-f">
+                    <div class="photo">
+                        <h3>留言互动区</h3>
+                    </div>
+                    <div class="container-box">
+                        <div class="item">
+                            <span class="border"></span>
+                            <img src="images/1.jpg" alt="Image 1">
+                        </div>
+                        <div class="item">
+                            <span class="border"></span>
+                            <img src="images/2.jpg" alt="Image 2">
+                        </div>
+                        <div class="item">
+                            <span class="border"></span>
+                            <img src="images/3.jpg" alt="Image 3">
+                        </div>
+                    </div>
+
+                    <div class="blackborad-text">
+                        <h4>画一个你心中的蜡笔小新吧！</h4>
+                    </div>
+
+                    <div class="canvas-container">
+                        <canvas id="canvas" width="600" height="300"></canvas>
+                        <div>
+                            <button style="background-color: yellow;" onclick="changeYellow()">Yellow</button>
+                            <button style="background-color: red;" onclick="changeRed()">Red</button>
+                            <button style="background-color: blue;" onclick="changeBlue()">Blue</button>
+                            <button style="background-color: green;" onclick="changeGreen()">Green</button>
+                            <button style="background-color: white;" onclick="changeWhite()">White</button>
+                            <input type="color" id="penColor" onchange="changeColor()">
+                            <button onclick="clearBord()">橡皮擦</button>
+                        </div>
+                        <div>
+                            <button onclick="change8px()">8px</button>
+                            <button onclick="addBig()">增粗</button>
+                            <button onclick="changeSmall()">变细</button>
+                        </div>
+                        <button style="background-color: pink;" onclick="copyimage()">EXPORT</button>
+                    </div>
+                    <div class="content">
+                        <form id="messageForm">
+                            <label for="user">用户名:</label>
+                            <input type="text" name="user" id="user" onkeyup="checkUser()">
+                            <span id="userError" style="color: red; opacity: 0.7;"></span>
+                            <label for="text">留言内容:</label>
+                            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                            <input type="submit" name="sub" id="sub" value="提交">
+                        </form>
+                        <div class="success-message" id="successMessage">
+                            您的留言已经成功提交，感谢您的留言，祝您生活愉快。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 波浪动画 -->
+                <div class="wave">
+                    <div style="--d1:-0.5s; --d2:-3.5s;"></div>
+                    <div style="--d1:-1s; --d2:-4s;"></div>
+                    <div style="--d1:-1.5s; --d2:-4.5s;"></div>
+                    <div style="--d1:-2s; --d2:-5s;"></div>
+                    <div style="--d1:-2.5s; --d2:-5.5s;"></div>
+                    <div style="--d1:-3s; --d2:-6s;"></div>
+                    <div style="--d1:-3.5s; --d2:-6.5s;"></div>
+                    <div style="--d1:-4s; --d2:-7s;"></div>
+                    <div style="--d1:-4.5s; --d2:-7.5s;"></div>
+                    <div style="--d1:-5s; --d2:-8s;"></div>
+                    <div style="--d1:-5.5s; --d2:-8.5s;"></div>
+                    <div style="--d1:-6s; --d2:-9s;"></div>
+                    <div style="--d1:-6.5s; --d2:-9.5s;"></div>
+                    <div style="--d1:-7s; --d2:-10s;"></div>
+                    <div style="--d1:-7.5s; --d2:-10.5s;"></div>
+                    <div style="--d1:-8s; --d2:-11s;"></div>
+                    <div style="--d1:-8.5s; --d2:-11.5s;"></div>
+                    <div style="--d1:-9s; --d2:-12s;"></div>
+                    <div style="--d1:-9.5s; --d2:-12.5s;"></div>
+                    <div style="--d1:-10s; --d2:-13s;"></div>
+                    <div style="--d1:-10.5s; --d2:-13.5s;"></div>
+                    <div style="--d1:-11s; --d2:-14s;"></div>
+                    <div style="--d1:-11.5s; --d2:-14.5s;"></div>
+                    <div style="--d1:-12s; --d2:-15s;"></div>
+                    <div style="--d1:-12.5s; --d2:-15.5s;"></div>
+                    <div style="--d1:-13s; --d2:-16s;"></div>
+                    <div style="--d1:-13.5s; --d2:-16.5s;"></div>
+                    <div style="--d1:-14s; --d2:-17s;"></div>
+                    <div style="--d1:-14.5s; --d2:-17.5s;"></div>
+                    <div style="--d1:-15s; --d2:-18s;"></div>
+                    <div style="--d1:-15.5s; --d2:-18.5s;"></div>
+                    <div style="--d1:-16s; --d2:-19s;"></div>
+                </div>
+            </div>
+
+<!--页面滑落效果-->
+<script>
+    const numLeaves = 20;
+    const leaves = [];
+
+
+    for (let i = 0; i < numLeaves; i++) {
+        const leaf = document.createElement('div');
+        leaf.classList.add('leaf');
+        leaf.style.left = Math.random() * window.innerWidth + 'px';
+        leaf.style.top = Math.random() * -window.innerHeight + 'px';
+
+        document.body.appendChild(leaf);
+        leaves.push(leaf);
+    }
+
+
+    function animateLeaves() {
+        leaves.forEach(leaf => {
+            const top = parseFloat(leaf.style.top);
+            const left = parseFloat(leaf.style.left);
+            const newTop = top + Math.random() * 1;
+            const newLeft = left + (Math.random() - 0.5) * 0;
+
+            leaf.style.top = newTop + 'px';
+            leaf.style.left = newLeft + 'px';
+
+
+            if (newTop > window.innerHeight) {
+                leaf.style.top = Math.random() * -window.innerHeight + 'px';
+                leaf.style.left = Math.random() * window.innerWidth + 'px';
+            }
+        });
+
+        requestAnimationFrame(animateLeaves);
+    }
+
+    animateLeaves();
+</script>
+
+
+<!-- 音乐播放器 -->
+<script type="text/javascript">
+    function playMusic() {
+        const musicPlayer = document.getElementById('musicPlayer');
+        musicPlayer.play();
+    }
+
+    function pauseMusic() {
+        const musicPlayer = document.getElementById('musicPlayer');
+        musicPlayer.pause();
+    }
+</script>
+
+<!-- 主页面轮播图 -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+            delay: 2000,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+<!-- 留言互动 -->
+<script>
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext("2d");
+    context.fillStyle = "black";
+    context.fillRect(0, 0, 600, 300);
+    var onoff = false;
+    var oldx = -10;
+    var oldy = -10;
+    var linecolor = "white";
+    var linw = 4;
+    var flag = false;
+    canvas.addEventListener("mousemove", draw, true);
+    canvas.addEventListener("mousedown", down, false);
+    canvas.addEventListener("mouseup", up, false);
+
+    var penc = document.getElementById("penColor");
+
+    function changeColor() {
+        linecolor = penc.value;
+    }
+
+    function down(e) {
+        onoff = true;
+        oldx = e.offsetX;
+        oldy = e.offsetY;
+    }
+
+    function up(e) {
+        onoff = false;
+    }
+
+    function draw(e) {
+        if (onoff) {
+            var newx = e.offsetX;
+            var newy = e.offsetY;
+            context.beginPath();
+            context.moveTo(oldx, oldy);
+            context.lineTo(newx, newy);
+            context.strokeStyle = flag ? "black" : linecolor;
+            context.lineWidth = flag ? 30 : linw;
+            context.lineCap = "round";
+            context.stroke();
+            oldx = newx;
+            oldy = newy;
+        }
+    }
+
+    function changeYellow() {
+        flag = false;
+        linecolor = "yellow";
+    }
+
+    function changeRed() {
+        flag = false;
+        linecolor = "red";
+    }
+
+    function changeBlue() {
+        flag = false;
+        linecolor = "blue";
+    }
+
+    function changeGreen() {
+        flag = false;
+        linecolor = "green";
+    }
+
+    function changeWhite() {
+        flag = false;
+        linecolor = "white";
+    }
+
+    function change8px() {
+        flag = false;
+        linw = 8;
+    }
+
+    function addBig() {
+        flag = false;
+        linw++;
+        if (linw > 20) {
+            linw = 20;
+        }
+    }
+
+    function changeSmall() {
+        flag = false;
+        linw--;
+        if (linw < 2) {
+            linw = 2;
+        }
+    }
+
+    function clearBord() {
+        flag = true;
+    }
+
+    function copyimage() {
+        var img_src_png = canvas.toDataURL("image/png");
+        document.getElementById("img_png").src = img_src_png;
+    }
+
+    function checkUser() {
+        const user = document.getElementById('user').value;
+        const userError = document.getElementById('userError');
+        if (user.length < 3) {
+            userError.textContent = '用户名太短';
+        } else {
+            userError.textContent = '';
+        }
+    }
+
+    document.getElementById('messageForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const successMessage = document.getElementById('successMessage');
+        successMessage.style.display = 'block';
+    });
+
+    /*滚动动画*/
+    const boxes = document.querySelectorAll('.c-recommend')
+
+    window.addEventListener('scroll', checkBoxes)
+
+    checkBoxes()
+
+    function checkBoxes() {
+        const triggerBottom = window.innerHeight / 5 * 4
+
+        boxes.forEach(box => {
+            const boxTop = box.getBoundingClientRect().top
+
+            if (boxTop < triggerBottom) {
+                box.classList.add('show')
+            } else {
+                box.classList.remove('show')
+            }
+        })
+    }
+</script>
+</body>
+
+</html>
